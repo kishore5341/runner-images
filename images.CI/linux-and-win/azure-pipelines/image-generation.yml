@@ -81,8 +81,8 @@ jobs:
         $TempResourceGroupName = "packer-temp-$ManagedImageName"
         Write-Host "##vso[task.setvariable variable=TempResourceGroupName;]$TempResourceGroupName"
 
-        $clientSecret = $(az keyvault secret show --name "spnhostedrunners" --vault-name "gh-imagegeneration" --query value -o tsv)
-        Write-Host "##vso[task.setvariable variable=ClientSecret;issecret=true]$clientSecret"
+       # $clientSecret = $(az keyvault secret show --name "spnhostedrunners" --vault-name "gh-imagegeneration" --query value -o tsv)
+       # Write-Host "##vso[task.setvariable variable=ClientSecret;issecret=true]$clientSecret"
 
   - task: PowerShell@2
     displayName: 'Build VM'
