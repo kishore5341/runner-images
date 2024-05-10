@@ -25,7 +25,7 @@ parameters:
 
   - name: variable_group_name
     type: string
-    default: 'Image Generation Variables'
+    default: 'Image_Generation_Variables'
 
   - name: create_release
     type: boolean
