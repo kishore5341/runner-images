@@ -136,7 +136,7 @@ Function GenerateResourcesAndImage {
         [Parameter(Mandatory = $False)]
         [string] $AzureTenantId,
         [Parameter(Mandatory = $False)]
-        [switch] $RestrictToAgentIpAddress,
+        [switch] $RestrictToAgentIpAddress = "False",
         [Parameter(Mandatory = $False)]
         [switch] $Force,
         [Parameter(Mandatory = $False)]
