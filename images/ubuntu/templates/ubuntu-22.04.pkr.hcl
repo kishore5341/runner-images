@@ -165,7 +165,7 @@ source "azure-arm" "build_image" {
   virtual_network_resource_group_name    = "${var.virtual_network_resource_group_name}"
   virtual_network_subnet_name            = "${var.virtual_network_subnet_name}"
   vm_size                                = "${var.vm_size}"
-  communicator                           = "SSH"
+ 
 
   dynamic "azure_tag" {
     for_each = var.azure_tags
